@@ -1,0 +1,121 @@
+* {
+  font-family: Roboto;
+}
+
+.main-div {
+  width: 336px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 4px rgb(224, 223, 223);
+}
+.yellow-div {
+  width: 336px;
+  height: 28px;
+  background-color: #ffdc40;
+  border-radius: 5px;
+}
+
+.sort-svg-div {
+  align-self: flex-end;
+  margin-right: 30px;
+  margin-bottom: 10px;
+
+  width: 25px;
+  height: 15px;
+}
+
+.sort-svg-div:hover .sort-svg {
+  filter: brightness(0);
+}
+.sort-reverse-svg {
+  display: none;
+  position: relative;
+  bottom: 20px;
+  width: 25px;
+  height: 15px;
+}
+.sort-reverse-svg:hover {
+  filter: brightness(0);
+}
+.input {
+  width: 286px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 5px;
+}
+.input-div {
+  position: relative;
+}
+.delete-svg-div {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  transition: fill 2s;
+}
+.delete-svg {
+  transition: fill 0.5s;
+}
+
+.delete-svg-div:hover .delete-svg {
+  fill: blueviolet;
+}
+.connected-buttons-div {
+  display: flex;
+  background-color: blueviolet;
+  border-radius: 70px;
+  width: 150px;
+  height: 42px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.plus-div {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: rgb(122, 43, 196);
+  transition: width 0.7s;
+  cursor: pointer;
+}
+.plus-div:hover {
+  width: 40%;
+}
+.plus-div:hover .plus-p {
+  color: rgb(255, 255, 255);
+}
+.plus-p {
+  color: rgb(209, 205, 205);
+}
+.add-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  cursor: pointer;
+  border-radius: 70px;
+  transition: font-size 1s;
+}
+.add-p {
+  padding-right: 20px;
+  color: white;
+}
+.add-div:hover .add-p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.list-div {
+  display: none;
+  border-radius: 15px;
+  max-height: 200px;
+  min-height: -2px;
+  width: 80%;
+  margin-top: 20px;
+  border: 1px solid;
+  overflow-y: auto;
+}
